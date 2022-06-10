@@ -1,0 +1,124 @@
+body {
+  background-color: black;
+  color: aliceblue;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.sm {
+  visibility: hidden;
+  float: right;
+}
+
+.mecha-style {
+  font-family: "Righteous", cursive;
+  letter-spacing: 3px;
+  margin-left: 10px;
+}
+
+.column {
+  height: 100vh;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.menu {
+  width: 18vw;
+  height: 100vh;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  height: 50px;
+}
+
+.border-bottom {
+  border-bottom: 2px solid white;
+}
+
+.nav-bar {
+  flex: 1;
+}
+
+.main {
+  padding: 10px;
+  width: 82vw;
+}
+
+.header {
+  height: 65px;
+  width: 100%;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.content {
+  padding-bottom: 10px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.scroll {
+  overflow: auto;
+}
+
+.footer {
+  height: 100px;
+  margin: 0;
+}
+
+.parts-box {
+  height: 100%;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  /* 1024pxまでの幅の場合に適応される */
+  body {
+    background-color: #2262d1;
+  }
+
+  .menu {
+    width: 25vw;
+  }
+
+  .main {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* 768pxまでの幅の場合に適応される */
+  body {
+    background-color: #f10010;
+  }
+
+  .sm {
+    visibility: visible;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .main {
+    width: 100vw;
+  }
+}
